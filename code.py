@@ -23,4 +23,6 @@ def resolve_domain():
     if domain == "":
         messagebox.showerror("Error", "Domain name cannot be empty")
         return
-    
+        try:
+        # DNS resolution (domain → IP)
+        ip = socket.gethostbyname(domain)
