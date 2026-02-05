@@ -16,3 +16,11 @@ def get_ssl_info(domain):
                 return cert.get('notBefore', 'N/A'), cert.get('notAfter', 'N/A')
     except:
         return "N/A", "N/A"
+# Resolve domain and collect all related information
+def resolve_domain():
+    domain =entry_domain.get().strip()
+
+    if domain == "":
+        messagebox.showerror("Error", "Domain name cannot be empty")
+        return
+    
