@@ -26,3 +26,9 @@ def resolve_domain():
         try:
         # DNS resolution (domain → IP)
         ip = socket.gethostbyname(domain)
+         # Reverse DNS lookup (IP → domain)
+        try:
+            reverse_dns = socket.gethostbyaddr(ip)[0]
+        except:
+            reverse_dns = "Not Available"
+
