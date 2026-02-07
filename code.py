@@ -31,4 +31,15 @@ def resolve_domain():
             reverse_dns = socket.gethostbyaddr(ip)[0]
         except:
             reverse_dns = "Not Available"
+         # WHOIS lookup (domain registration date)
+        reg_date = "Not Available"
+        try:
+            w = whois.whois(domain)
+            reg_date = w.creation_date
+            if isinstance(reg_date, list):
+                reg_date = reg_date[0]
+            if reg_date is None:
+                reg_date = "Not Available"
+        except:
+            reg_date = "WHOIS Lookup Failed"
 
