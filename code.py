@@ -23,7 +23,7 @@ def resolve_domain():
     if domain == "":
         messagebox.showerror("Error", "Domain name cannot be empty")
         return
-        try:
+    try:
         # DNS resolution (domain → IP)
         ip = socket.gethostbyname(domain)
          # Reverse DNS lookup (IP → domain)
@@ -42,4 +42,17 @@ def resolve_domain():
                 reg_date = "Not Available"
         except:
             reg_date = "WHOIS Lookup Failed"
+
+        # SSL certificate details
+        issued, expires = get_ssl_info(domain)
+
+        # Prepare output text
+        output = (
+            f"Domain: {domain}\n"
+            f"IP Address: {ip}\n"
+            f"Reverse DNS: {reverse_dns}\n"
+            f"Registered On: {reg_date}\n"
+            f"SSL Issued On: {issued}\n"
+            f"SSL Expires On: {expires}"
+        )
 
