@@ -55,4 +55,10 @@ def resolve_domain():
             f"SSL Issued On: {issued}\n"
             f"SSL Expires On: {expires}"
         )
+        # Display output (read-only)
+        text_output.config(state=tk.NORMAL)
+        text_output.delete(1.0, tk.END)
+        text_output.insert(tk.END, output)
+        text_output.config(state=tk.DISABLED)
+
 
