@@ -60,7 +60,13 @@ def resolve_domain():
         text_given.delete(1.0, tk.END)
         text_given.insert(tk.END, output)
         text_given.config(state=tk.DISABLED)
+        
+         # Store history
+        records.append([domain, ip])
+        update_listbox()
 
+    except socket.gaierror:
+        messagebox.showerror("Error", "DNS resolution failed")
 
 
 
