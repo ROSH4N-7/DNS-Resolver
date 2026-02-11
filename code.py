@@ -18,7 +18,7 @@ def get_ssl_info(domain):
         return "N/A", "N/A"
 # Resolve domain and collect all related information
 def resolve_domain():
-    domain =entry_domain.get().strip()
+    domain = entry_domain.get().strip()
 
     if domain == "":
         messagebox.showerror("Error", "Domain name cannot be empty")
@@ -67,6 +67,12 @@ def resolve_domain():
 
     except socket.gaierror:
         messagebox.showerror("Error", "DNS resolution failed")
+        
+# Update history listbox
+def update_listbox():
+    listbox.delete(0, tk.END)
+    for r in records:
+        listbox.insert(tk.END, f"{r[0]} → {r[1]}")
 
 
 
