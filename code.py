@@ -56,10 +56,10 @@ def resolve_domain():
             f"SSL Expires On: {expires}"
         )
         # Display output (read-only)
-        text_given.config(state=tk.NORMAL)
-        text_given.delete(1.0, tk.END)
-        text_given.insert(tk.END, output)
-        text_given.config(state=tk.DISABLED)
+        text_output.config(state=tk.NORMAL)
+        text_output.delete(1.0, tk.END)
+        text_output.insert(tk.END, output)
+        text_output.config(state=tk.DISABLED)
         
          # Store history
         records.append([domain, ip])
@@ -74,5 +74,11 @@ def update_listbox():
     for r in records:
         listbox.insert(tk.END, f"{r[0]} → {r[1]}")
 
+#GUI Setup
+window = tk.Tk()
+window.title("Advanced DNS Information Tool")
+window.geometry("520x520")
+
+tk.Label(window, text="Advanced DNS Resolver", font=("Arial", 16)).pack(pady=10)
 
 
