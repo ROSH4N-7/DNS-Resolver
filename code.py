@@ -87,3 +87,10 @@ entry_domain.pack(pady=5)
 
 tk.Button(window, text="Get Domain Info", command=resolve_domain).pack(pady=10)
 
+text_output = tk.Text(window, height=10, width=60, state=tk.DISABLED)
+text_output.pack(pady=10)
+
+tk.Label(window, text="Resolved History:").pack()
+listbox = tk.Listbox(window, width=60)
+listbox.pack(pady=5)
+
