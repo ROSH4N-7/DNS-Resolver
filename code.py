@@ -81,4 +81,9 @@ window.geometry("520x520")
 
 tk.Label(window, text="Advanced DNS Resolver", font=("Arial", 16)).pack(pady=10)
 
+tk.Label(window, text="Enter Domain Name:").pack()
+entry_domain = tk.Entry(window, width=35)
+entry_domain.pack(pady=5)
+
+tk.Button(window, text="Get Domain Info", command=resolve_domain).pack(pady=10)
 
