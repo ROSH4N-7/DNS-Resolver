@@ -94,3 +94,8 @@ tk.Label(window, text="Resolved History:").pack()
 listbox = tk.Listbox(window, width=60)
 listbox.pack(pady=5)
 
+tk.Button(window, text="Exit", command=window.quit).pack(pady=10)
+
+window.mainloop()
+
+
