@@ -1,3 +1,4 @@
+#Imports
 import socket
 import ssl
 import whois
@@ -6,6 +7,7 @@ from tkinter import messagebox
 #Storing resolved domain records
 records= []
 
+#Function
 # Collected SSL certificate issued and expiry dates
 def get_ssl_info(domain):
     try:
