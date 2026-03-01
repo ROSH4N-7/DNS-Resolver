@@ -2,7 +2,7 @@
 This my project for semester 1 for module: Introduction to programming
 
 
-📋 Description
+## 📋 Description
 
 This is a **user-friendly GUI application** that lets you enter any domain name and instantly get detailed DNS information:
 
@@ -12,3 +12,15 @@ This is a **user-friendly GUI application** that lets you enter any domain name 
 - SSL certificate issued & expiry dates
 
 It also keeps a **live history** of every domain you have resolved.
+
+
+## ✨ Features
+
+- Clean and simple graphical interface (Tkinter)
+- Real-time DNS resolution using `socket`
+- Reverse DNS lookup
+- WHOIS registration date
+- SSL certificate details (issued & expiry)
+- History list of all previous resolutions
+- Proper error handling (empty input, invalid domain, etc.)
+- Read-only output area to prevent accidental editing
