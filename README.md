@@ -75,3 +75,7 @@ SSL Connection Timeout → Added timeout=5 and try-except block
 WHOIS returning list of dates → Added code to handle list and None values
 GUI freezing during lookup → All network calls are fast enough for smooth experience
 History not updating → Created global records list and update_listbox() function
+
+## 📄 License
+This project is open for educational purposes. Feel free to use and modify it.
+This is prepared by Roshan Khanal
