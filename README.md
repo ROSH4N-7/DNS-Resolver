@@ -52,3 +52,9 @@ python code.py
 2. Click Get Domain Info
 3. Results appear below
 4. All previous queries are saved in the Resolved History list
+
+
+## Project Structure
+DNS-Resolver/
+├── README.md          ← This file
+├── code.py            ← Main program (fully commented)
