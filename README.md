@@ -33,3 +33,10 @@ It also keeps a **live history** of every domain you have resolved.
 - **socket** – DNS & network functions
 - **ssl** – SSL certificate information
 - **whois** (python-whois) – Domain registration data
+
+
+## 🚀 How to Run
+
+### 1. Install the required library
+```bash
+pip install python-whois
