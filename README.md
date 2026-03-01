@@ -58,3 +58,12 @@ python code.py
 DNS-Resolver/
 ├── README.md          ← This file
 ├── code.py            ← Main program (fully commented)
+
+
+## 🎯 What I Learned
+
+1) Using Python’s built-in networking libraries (socket, ssl)
+2) Working with external packages (whois)
+3) Building a complete GUI application with Tkinter
+4) Input validation and exception handling
+5) Version control with Git & GitHub
