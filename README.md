@@ -24,3 +24,12 @@ It also keeps a **live history** of every domain you have resolved.
 - History list of all previous resolutions
 - Proper error handling (empty input, invalid domain, etc.)
 - Read-only output area to prevent accidental editing
+
+
+## 🛠️ Technologies Used
+
+- **Python 3**
+- **Tkinter** – GUI
+- **socket** – DNS & network functions
+- **ssl** – SSL certificate information
+- **whois** (python-whois) – Domain registration data
