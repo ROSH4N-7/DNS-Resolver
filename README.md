@@ -67,3 +67,11 @@ DNS-Resolver/
 3) Building a complete GUI application with Tkinter
 4) Input validation and exception handling
 5) Version control with Git & GitHub
+
+
+## ⚙️ Challenges Faced & How I Solved Them
+
+SSL Connection Timeout → Added timeout=5 and try-except block
+WHOIS returning list of dates → Added code to handle list and None values
+GUI freezing during lookup → All network calls are fast enough for smooth experience
+History not updating → Created global records list and update_listbox() function
