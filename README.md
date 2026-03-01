@@ -42,5 +42,4 @@ It also keeps a **live history** of every domain you have resolved.
 pip install python-whois
 
 2. Running the code
-```bash
 python code.py
