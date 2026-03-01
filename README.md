@@ -43,4 +43,12 @@ pip install python-whois
 ```
 
 ### 2. Running the code
+```bash
 python code.py
+```
+## 📖 Usage
+
+1. Type a domain name in the box (example: google.com, github.com, youtube.com)
+2. Click Get Domain Info
+3. Results appear below
+4. All previous queries are saved in the Resolved History list
