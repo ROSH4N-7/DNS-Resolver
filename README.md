@@ -40,6 +40,7 @@ It also keeps a **live history** of every domain you have resolved.
 ### 1. Install the required library
 ```bash
 pip install python-whois
+```
 
-2. Running the code
+### 2. Running the code
 python code.py
